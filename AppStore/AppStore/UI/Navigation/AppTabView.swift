@@ -13,13 +13,13 @@ struct AppTabView: View {
 		TabView {
 			TodayView()
 				.tabItem {
-					Image(systemName: "note")
+					Image(systemName: "doc.text.image")
 					Text("Today")
 				}
 
 			GamesView()
 				.tabItem {
-					Image(systemName: "keyboard")
+					Image(systemName: "paperplane.fill")
 					Text("Games")
 				}
 

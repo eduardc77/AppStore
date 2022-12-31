@@ -25,12 +25,12 @@
 		EA2E0267295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0261295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift */; };
 		EA2E0268295CB7C300E67C8F /* AppCarouselLargeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0262295CB7C300E67C8F /* AppCarouselLargeBlock.swift */; };
 		EA2E0271295CB97000E67C8F /* AppLargeCard3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026A295CB97000E67C8F /* AppLargeCard3.swift */; };
-		EA2E0272295CB97000E67C8F /* AppSmall2Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026B295CB97000E67C8F /* AppSmall2Block.swift */; };
-		EA2E0273295CB97000E67C8F /* AppSmall1Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026C295CB97000E67C8F /* AppSmall1Block.swift */; };
+		EA2E0272295CB97000E67C8F /* AppSmallCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026B295CB97000E67C8F /* AppSmallCard2.swift */; };
+		EA2E0273295CB97000E67C8F /* AppSmallCard1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026C295CB97000E67C8F /* AppSmallCard1.swift */; };
 		EA2E0274295CB97000E67C8F /* AppLargeCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026D295CB97000E67C8F /* AppLargeCard2.swift */; };
 		EA2E0275295CB97000E67C8F /* AppLargeCard1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026E295CB97000E67C8F /* AppLargeCard1.swift */; };
-		EA2E0276295CB97000E67C8F /* AppMedium2Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026F295CB97000E67C8F /* AppMedium2Block.swift */; };
-		EA2E0277295CB97000E67C8F /* AppMedium1Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0270295CB97000E67C8F /* AppMedium1Block.swift */; };
+		EA2E0276295CB97000E67C8F /* AppMediumCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026F295CB97000E67C8F /* AppMediumCard2.swift */; };
+		EA2E0277295CB97000E67C8F /* AppMediumCard1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0270295CB97000E67C8F /* AppMediumCard1.swift */; };
 		EA2E0280295CBBB300E67C8F /* QuickLinksBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E027A295CBBB300E67C8F /* QuickLinksBlock.swift */; };
 		EA2E0281295CBBB300E67C8F /* DiscoverBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E027B295CBBB300E67C8F /* DiscoverBlock.swift */; };
 		EA2E0282295CBBB300E67C8F /* TopAppsCategoriesBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E027C295CBBB300E67C8F /* TopAppsCategoriesBlock.swift */; };
@@ -79,12 +79,12 @@
 		EA2E0261295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselExtraLargeBlock.swift; sourceTree = "<group>"; };
 		EA2E0262295CB7C300E67C8F /* AppCarouselLargeBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselLargeBlock.swift; sourceTree = "<group>"; };
 		EA2E026A295CB97000E67C8F /* AppLargeCard3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLargeCard3.swift; sourceTree = "<group>"; };
-		EA2E026B295CB97000E67C8F /* AppSmall2Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSmall2Block.swift; sourceTree = "<group>"; };
-		EA2E026C295CB97000E67C8F /* AppSmall1Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSmall1Block.swift; sourceTree = "<group>"; };
+		EA2E026B295CB97000E67C8F /* AppSmallCard2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSmallCard2.swift; sourceTree = "<group>"; };
+		EA2E026C295CB97000E67C8F /* AppSmallCard1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSmallCard1.swift; sourceTree = "<group>"; };
 		EA2E026D295CB97000E67C8F /* AppLargeCard2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLargeCard2.swift; sourceTree = "<group>"; };
 		EA2E026E295CB97000E67C8F /* AppLargeCard1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLargeCard1.swift; sourceTree = "<group>"; };
-		EA2E026F295CB97000E67C8F /* AppMedium2Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMedium2Block.swift; sourceTree = "<group>"; };
-		EA2E0270295CB97000E67C8F /* AppMedium1Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMedium1Block.swift; sourceTree = "<group>"; };
+		EA2E026F295CB97000E67C8F /* AppMediumCard2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMediumCard2.swift; sourceTree = "<group>"; };
+		EA2E0270295CB97000E67C8F /* AppMediumCard1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMediumCard1.swift; sourceTree = "<group>"; };
 		EA2E027A295CBBB300E67C8F /* QuickLinksBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLinksBlock.swift; sourceTree = "<group>"; };
 		EA2E027B295CBBB300E67C8F /* DiscoverBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverBlock.swift; sourceTree = "<group>"; };
 		EA2E027C295CBBB300E67C8F /* TopAppsCategoriesBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppsCategoriesBlock.swift; sourceTree = "<group>"; };
@@ -271,10 +271,10 @@
 				EA2E026E295CB97000E67C8F /* AppLargeCard1.swift */,
 				EA2E026D295CB97000E67C8F /* AppLargeCard2.swift */,
 				EA2E026A295CB97000E67C8F /* AppLargeCard3.swift */,
-				EA2E0270295CB97000E67C8F /* AppMedium1Block.swift */,
-				EA2E026F295CB97000E67C8F /* AppMedium2Block.swift */,
-				EA2E026C295CB97000E67C8F /* AppSmall1Block.swift */,
-				EA2E026B295CB97000E67C8F /* AppSmall2Block.swift */,
+				EA2E0270295CB97000E67C8F /* AppMediumCard1.swift */,
+				EA2E026F295CB97000E67C8F /* AppMediumCard2.swift */,
+				EA2E026C295CB97000E67C8F /* AppSmallCard1.swift */,
+				EA2E026B295CB97000E67C8F /* AppSmallCard2.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -417,7 +417,7 @@
 				EA2E0280295CBBB300E67C8F /* QuickLinksBlock.swift in Sources */,
 				EA2E0266295CB7C300E67C8F /* AppCarouselMedium2Block.swift in Sources */,
 				EA2E0255295CB33500E67C8F /* DetailView.swift in Sources */,
-				EA2E0272295CB97000E67C8F /* AppSmall2Block.swift in Sources */,
+				EA2E0272295CB97000E67C8F /* AppSmallCard2.swift in Sources */,
 				EA2E0267295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift in Sources */,
 				EA2E02AB295CC15E00E67C8F /* SingleLineNavigationLink.swift in Sources */,
 				EA2E0281295CBBB300E67C8F /* DiscoverBlock.swift in Sources */,
@@ -430,7 +430,7 @@
 				EA2E0297295CBDA900E67C8F /* DefaultButton.swift in Sources */,
 				EA2E0293295CBDA900E67C8F /* DismissButton.swift in Sources */,
 				EA2E0296295CBDA900E67C8F /* TryButton.swift in Sources */,
-				EA2E0277295CB97000E67C8F /* AppMedium1Block.swift in Sources */,
+				EA2E0277295CB97000E67C8F /* AppMediumCard1.swift in Sources */,
 				EA2E024F295CB31900E67C8F /* ArcadeView.swift in Sources */,
 				EA2E0264295CB7C300E67C8F /* AppCarouselSmall1Block.swift in Sources */,
 				EA2E0251295CB32400E67C8F /* SearchView.swift in Sources */,
@@ -449,12 +449,12 @@
 				EA2E02A6295CC06500E67C8F /* SectionHeaderBlock.swift in Sources */,
 				EA2E0263295CB7C300E67C8F /* AppCarouselSmall2Block.swift in Sources */,
 				EA2E02A0295CBE4800E67C8F /* ItemDetailsLabel.swift in Sources */,
-				EA2E0276295CB97000E67C8F /* AppMedium2Block.swift in Sources */,
+				EA2E0276295CB97000E67C8F /* AppMediumCard2.swift in Sources */,
 				EA2E0294295CBDA900E67C8F /* SingleLineButton.swift in Sources */,
 				EA2E0284295CBBB300E67C8F /* TopGamesCategoriesBlock.swift in Sources */,
 				EA2E029F295CBE4800E67C8F /* InAppPurchasesLabel.swift in Sources */,
 				EA2E024B295CB30200E67C8F /* GamesView.swift in Sources */,
-				EA2E0273295CB97000E67C8F /* AppSmall1Block.swift in Sources */,
+				EA2E0273295CB97000E67C8F /* AppSmallCard1.swift in Sources */,
 				EA5DA82D295FB18900C2060C /* ParallaxHeaderView.swift in Sources */,
 				EA2E024D295CB30D00E67C8F /* AppsView.swift in Sources */,
 				EA2E0287295CBBB700E67C8F /* RecentlyUpdatedAppsList.swift in Sources */,
@@ -587,9 +587,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStore/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V3WEN3K4CT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "App Store";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -617,9 +619,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStore/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V3WEN3K4CT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "App Store";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
