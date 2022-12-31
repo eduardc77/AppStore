@@ -40,7 +40,7 @@ struct ArcadeHeader: View {
 					.foregroundColor(Color(.lightGray))
 					.padding(.bottom, 32)
 			}
-			.padding(.horizontal, 46)
+			.padding(.horizontal, 32)
 		}
 		.padding(.horizontal, 24)
 		.frame(height: UIScreen.main.bounds.height * 0.75)

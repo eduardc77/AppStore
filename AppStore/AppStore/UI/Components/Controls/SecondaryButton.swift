@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SecondaryButton: View {
+	@Environment (\.colorScheme) var colorScheme:ColorScheme
 	@State var isPresented = false
 	let title: String
 	
@@ -16,10 +17,14 @@ struct SecondaryButton: View {
 			isPresented = true
 		} label: {
 			Text(title)
-				.font(.headline)
+				.fontWeight(.semibold)
 				.frame(maxWidth: .infinity)
+				.frame(height: 36)
+				.foregroundColor(colorScheme == .light ? .blue : .white)
+				.background(Color(.secondarySystemGroupedBackground))
+				.cornerRadius(12)
+
 		}
-		.buttonStyle(.bordered)
 		.sheet(isPresented: $isPresented) {
 			DetailView(title: title)
 		}

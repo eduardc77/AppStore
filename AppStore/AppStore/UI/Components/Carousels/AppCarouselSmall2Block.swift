@@ -27,7 +27,6 @@ struct AppCarouselSmall2Block: View {
 		}
 		.padding(.top, 36)
 		.padding(.bottom, 24)
-		.background(Color(.systemGroupedBackground))
 	}
 
 	private func infiniteCarouselSection(size: CGSize) -> some View {
