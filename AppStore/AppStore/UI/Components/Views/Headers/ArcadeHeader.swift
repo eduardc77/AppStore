@@ -11,39 +11,42 @@ struct ArcadeHeader: View {
 	@State var isAccountViewPresented = false
 
 	var body: some View {
-		ZStack {
-			ParallaxHeaderView()
+		VStack(spacing: 12) {
+			AccountButton(isAccountViewPresented: $isAccountViewPresented)
+				.padding(.top, 80)
+				.frame(maxWidth: .infinity, alignment: .trailing)
 
-			VStack(spacing: 12) {
-				AccountButton(isAccountViewPresented: $isAccountViewPresented)
-					.padding(.top, 64)
-					.frame(maxWidth: .infinity, alignment: .trailing)
+			Spacer()
 
-				Spacer()
-
+			Group {
 				Text(" Arcade")
-					.foregroundColor(.secondary)
-					.font(.title3.weight(.medium))
+					.foregroundColor(Color(.lightGray))
+					.font(.title2.weight(.medium))
 				Text(
-                """
-                Play 200+ games.
-                No in-app purchases.
-                No ads.
-                """
+				"""
+				Play 200+ games.
+				No in-app purchases.
+				No ads.
+				"""
 				)
-				.font(.title3.weight(.medium))
+				.font(.title2.weight(.medium))
 				.multilineTextAlignment(.center)
 				.foregroundColor(.white)
 
-				DefaultButton(title: "Try It Free")
+				PrimaryButton(title: "Try It Free")
 
-				Text("One month free, then $6.66/month.")
-					.font(.caption)
-					.foregroundColor(.secondary)
+				Text("1 month free, then $6.66/month.")
+					.font(.footnote)
+					.foregroundColor(Color(.lightGray))
 					.padding(.bottom, 32)
 			}
 			.padding(.horizontal, 46)
-			.frame(height: UIScreen.main.bounds.height * 0.75)
+		}
+		.padding(.horizontal, 24)
+		.frame(height: UIScreen.main.bounds.height * 0.75)
+		
+		.background {
+			ParallaxHeaderView()
 		}
 	}
 }

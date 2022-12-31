@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA204D972960E50D00687003 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA204D962960E50D00687003 /* PrimaryButton.swift */; };
 		EA2E0235295CB11000E67C8F /* AppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0234295CB11000E67C8F /* AppStoreApp.swift */; };
 		EA2E0239295CB11200E67C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2E0238295CB11200E67C8F /* Assets.xcassets */; };
 		EA2E023C295CB11200E67C8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2E023B295CB11200E67C8F /* Preview Assets.xcassets */; };
@@ -45,7 +46,7 @@
 		EA2E0294295CBDA900E67C8F /* SingleLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E028D295CBDA900E67C8F /* SingleLineButton.swift */; };
 		EA2E0295295CBDA900E67C8F /* GetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E028E295CBDA900E67C8F /* GetButton.swift */; };
 		EA2E0296295CBDA900E67C8F /* TryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E028F295CBDA900E67C8F /* TryButton.swift */; };
-		EA2E0297295CBDA900E67C8F /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0290295CBDA900E67C8F /* DefaultButton.swift */; };
+		EA2E0297295CBDA900E67C8F /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0290295CBDA900E67C8F /* SecondaryButton.swift */; };
 		EA2E029E295CBE4800E67C8F /* ItemTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E029B295CBE4800E67C8F /* ItemTitleLabel.swift */; };
 		EA2E029F295CBE4800E67C8F /* InAppPurchasesLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E029C295CBE4800E67C8F /* InAppPurchasesLabel.swift */; };
 		EA2E02A0295CBE4800E67C8F /* ItemDetailsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E029D295CBE4800E67C8F /* ItemDetailsLabel.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA204D962960E50D00687003 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		EA2E0231295CB11000E67C8F /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2E0234295CB11000E67C8F /* AppStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreApp.swift; sourceTree = "<group>"; };
 		EA2E0238295CB11200E67C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		EA2E028D295CBDA900E67C8F /* SingleLineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLineButton.swift; sourceTree = "<group>"; };
 		EA2E028E295CBDA900E67C8F /* GetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetButton.swift; sourceTree = "<group>"; };
 		EA2E028F295CBDA900E67C8F /* TryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryButton.swift; sourceTree = "<group>"; };
-		EA2E0290295CBDA900E67C8F /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		EA2E0290295CBDA900E67C8F /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		EA2E029B295CBE4800E67C8F /* ItemTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTitleLabel.swift; sourceTree = "<group>"; };
 		EA2E029C295CBE4800E67C8F /* InAppPurchasesLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchasesLabel.swift; sourceTree = "<group>"; };
 		EA2E029D295CBE4800E67C8F /* ItemDetailsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsLabel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA204D952960E36C00687003 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E0238295CB11200E67C8F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EA2E0228295CB11000E67C8F = {
 			isa = PBXGroup;
 			children = (
@@ -143,10 +153,10 @@
 		EA2E0233295CB11000E67C8F /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				EA2E0234295CB11000E67C8F /* AppStoreApp.swift */,
 				EA2E0242295CB24F00E67C8F /* UI */,
 				EA2E02AC295CC30D00E67C8F /* Extensions */,
-				EA2E0234295CB11000E67C8F /* AppStoreApp.swift */,
-				EA2E0238295CB11200E67C8F /* Assets.xcassets */,
+				EA204D952960E36C00687003 /* Resources */,
 				EA2E023A295CB11200E67C8F /* Preview Content */,
 			);
 			path = AppStore;
@@ -283,12 +293,13 @@
 			isa = PBXGroup;
 			children = (
 				EA2E028B295CBDA800E67C8F /* AccountButton.swift */,
-				EA2E0290295CBDA900E67C8F /* DefaultButton.swift */,
+				EA204D962960E50D00687003 /* PrimaryButton.swift */,
+				EA2E0290295CBDA900E67C8F /* SecondaryButton.swift */,
 				EA2E028C295CBDA800E67C8F /* DismissButton.swift */,
 				EA2E028E295CBDA900E67C8F /* GetButton.swift */,
+				EA2E028F295CBDA900E67C8F /* TryButton.swift */,
 				EA2E028D295CBDA900E67C8F /* SingleLineButton.swift */,
 				EA2E028A295CBDA800E67C8F /* SingleLineIconAndButtonView.swift */,
-				EA2E028F295CBDA900E67C8F /* TryButton.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -427,7 +438,7 @@
 				EA2E0283295CBBB300E67C8F /* TermsAndConditionsBlock.swift in Sources */,
 				EA2E0249295CB2F500E67C8F /* TodayView.swift in Sources */,
 				EA2E02AA295CC15E00E67C8F /* ProfileNavigationLink.swift in Sources */,
-				EA2E0297295CBDA900E67C8F /* DefaultButton.swift in Sources */,
+				EA2E0297295CBDA900E67C8F /* SecondaryButton.swift in Sources */,
 				EA2E0293295CBDA900E67C8F /* DismissButton.swift in Sources */,
 				EA2E0296295CBDA900E67C8F /* TryButton.swift in Sources */,
 				EA2E0277295CB97000E67C8F /* AppMediumCard1.swift in Sources */,
@@ -450,6 +461,7 @@
 				EA2E0263295CB7C300E67C8F /* AppCarouselSmall2Block.swift in Sources */,
 				EA2E02A0295CBE4800E67C8F /* ItemDetailsLabel.swift in Sources */,
 				EA2E0276295CB97000E67C8F /* AppMediumCard2.swift in Sources */,
+				EA204D972960E50D00687003 /* PrimaryButton.swift in Sources */,
 				EA2E0294295CBDA900E67C8F /* SingleLineButton.swift in Sources */,
 				EA2E0284295CBBB300E67C8F /* TopGamesCategoriesBlock.swift in Sources */,
 				EA2E029F295CBE4800E67C8F /* InAppPurchasesLabel.swift in Sources */,

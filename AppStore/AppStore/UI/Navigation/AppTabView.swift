@@ -14,24 +14,25 @@ struct AppTabView: View {
 			TodayView()
 				.tabItem {
 					Image(systemName: "doc.text.image")
+						.symbolVariant(.fill)
 					Text("Today")
 				}
 
 			GamesView()
 				.tabItem {
-					Image(systemName: "paperplane.fill")
+					Image(systemName: "paperplane")
 					Text("Games")
 				}
 
 			AppsView()
 				.tabItem {
-					Image(systemName: "square.stack.3d.up.fill")
+					Image(systemName: "square.stack.3d.up")
 					Text("Apps")
 				}
 
 			ArcadeView()
 				.tabItem {
-					Image(systemName: "gamecontroller.fill")
+					Image(systemName: "gamecontroller")
 					Text("Arcade")
 				}
 

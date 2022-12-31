@@ -12,9 +12,9 @@ struct SingleLineButton: View {
 	let title: String
 	
 	var body: some View {
-		Button(action: {
+		Button {
 			isPresented = true
-		}) {
+		} label: {
 			Text(title)
 		}
 		.sheet(isPresented: $isPresented) {

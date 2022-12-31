@@ -21,9 +21,9 @@ struct QuickLinksBlock: View {
 			}
 			
 			VStack(spacing: 10) {
-				DefaultButton(title: "Redeem")
-				DefaultButton(title: "Send Gift")
-				DefaultButton(title: "Add Funds to Apple ID")
+				SecondaryButton(title: "Redeem")
+				SecondaryButton(title: "Send Gift")
+				SecondaryButton(title: "Add Funds to Apple ID")
 			}
 			.padding(.top, 64)
 		}

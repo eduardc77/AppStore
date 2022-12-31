@@ -13,13 +13,12 @@ struct SingleLineIconAndButtonView: View {
 	let buttonTitle: String
 	
 	var body: some View {
-		Button(action: {
+		Button {
 			isPresented = true
-		}) {
-			HStack() {
+		} label: {
+			HStack {
 				Text(emojiImage)
 				Text(buttonTitle)
-					.foregroundColor(.primary)
 			}
 		}
 		.frame(maxWidth: .infinity, alignment: .leading)
@@ -33,6 +32,6 @@ struct SingleLineIconAndButtonView: View {
 
 struct SingleLineIconAndButtonView_Previews: PreviewProvider {
 	static var previews: some View {
-		SingleLineIconAndButtonView(emojiImage: "🇫🇷", buttonTitle: "Title")
+		SingleLineIconAndButtonView(emojiImage: "🚀", buttonTitle: "Title")
 	}
 }
