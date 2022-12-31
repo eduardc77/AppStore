@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AppContainer: View {
+	var width: CGFloat = 75
+	var height: CGFloat = 75
+
 	var body: some View {
-		RoundedRectangle(cornerRadius: 12, style: .continuous)
+		RoundedRectangle(cornerRadius: 14, style: .continuous)
 			.foregroundColor(Color.gray)
-			.frame(width: 75, height: 75)
+			.frame(width: width, height: height)
 	}
 }
 

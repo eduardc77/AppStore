@@ -31,6 +31,7 @@ struct AppCarouselSmall1Block: View {
 		}
 		.frame(width: UIScreen.main.bounds.width, height: 250)
 		.padding(.bottom)
+		.background(Color(.systemBackground))
 	}
 }
 

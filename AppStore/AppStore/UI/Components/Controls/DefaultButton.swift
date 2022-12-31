@@ -21,7 +21,7 @@ struct DefaultButton: View {
 				.frame(maxWidth: .infinity)
 				.frame(height: 44)
 				.foregroundColor(colorScheme == .light ? .blue : .white)
-				.background(Color(UIColor.systemGray6))
+				.background(Color(.tertiarySystemGroupedBackground))
 				.cornerRadius(10)
 		}
 		.sheet(isPresented: self.$isPresented) {

@@ -55,6 +55,8 @@
 		EA2E02AA295CC15E00E67C8F /* ProfileNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E02A8295CC15E00E67C8F /* ProfileNavigationLink.swift */; };
 		EA2E02AB295CC15E00E67C8F /* SingleLineNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E02A9295CC15E00E67C8F /* SingleLineNavigationLink.swift */; };
 		EA2E02AE295CC32400E67C8F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E02AD295CC32400E67C8F /* Date+Extension.swift */; };
+		EA5DA82B295F7F3100C2060C /* InfiniteCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA82A295F7F3100C2060C /* InfiniteCarousel.swift */; };
+		EA5DA82D295FB18900C2060C /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA82C295FB18900C2060C /* ParallaxHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +109,8 @@
 		EA2E02A8295CC15E00E67C8F /* ProfileNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationLink.swift; sourceTree = "<group>"; };
 		EA2E02A9295CC15E00E67C8F /* SingleLineNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLineNavigationLink.swift; sourceTree = "<group>"; };
 		EA2E02AD295CC32400E67C8F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EA5DA82A295F7F3100C2060C /* InfiniteCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarousel.swift; sourceTree = "<group>"; };
+		EA5DA82C295FB18900C2060C /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,7 @@
 				EA2E0260295CB7C300E67C8F /* AppCarouselMedium2Block.swift */,
 				EA2E025E295CB7C300E67C8F /* AppCarouselSmall1Block.swift */,
 				EA2E025D295CB7C300E67C8F /* AppCarouselSmall2Block.swift */,
+				EA5DA82A295F7F3100C2060C /* InfiniteCarousel.swift */,
 			);
 			path = Carousels;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				EA2E02A2295CC06500E67C8F /* ArcadeHeader.swift */,
 				EA2E02A3295CC06500E67C8F /* SectionHeaderBlock.swift */,
 				EA2E02A4295CC06500E67C8F /* SectionHeaderExtendedBlock.swift */,
+				EA5DA82C295FB18900C2060C /* ParallaxHeaderView.swift */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				EA2E0267295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift in Sources */,
 				EA2E02AB295CC15E00E67C8F /* SingleLineNavigationLink.swift in Sources */,
 				EA2E0281295CBBB300E67C8F /* DiscoverBlock.swift in Sources */,
+				EA5DA82B295F7F3100C2060C /* InfiniteCarousel.swift in Sources */,
 				EA2E0285295CBBB300E67C8F /* SuggestedAppsBlock.swift in Sources */,
 				EA2E02A7295CC06500E67C8F /* SectionHeaderExtendedBlock.swift in Sources */,
 				EA2E0283295CBBB300E67C8F /* TermsAndConditionsBlock.swift in Sources */,
@@ -448,6 +455,7 @@
 				EA2E029F295CBE4800E67C8F /* InAppPurchasesLabel.swift in Sources */,
 				EA2E024B295CB30200E67C8F /* GamesView.swift in Sources */,
 				EA2E0273295CB97000E67C8F /* AppSmall1Block.swift in Sources */,
+				EA5DA82D295FB18900C2060C /* ParallaxHeaderView.swift in Sources */,
 				EA2E024D295CB30D00E67C8F /* AppsView.swift in Sources */,
 				EA2E0287295CBBB700E67C8F /* RecentlyUpdatedAppsList.swift in Sources */,
 				EA2E0235295CB11000E67C8F /* AppStoreApp.swift in Sources */,

@@ -27,6 +27,7 @@ struct AppCarouselMedium1Block: View {
 		}
 		.frame(height: 250)
 		.padding(.bottom, 24)
+		.background(Color(.systemBackground))
 	}
 }
 

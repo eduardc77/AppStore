@@ -12,7 +12,7 @@ struct ItemDetailsLabel: View {
 	
 	var body: some View {
 		Text(text)
-			.font(.subheadline)
+			.font(.footnote)
 			.foregroundColor(.secondary)
 	}
 }
