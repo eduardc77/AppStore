@@ -11,7 +11,7 @@ struct SecondaryButton: View {
 	@Environment (\.colorScheme) var colorScheme: ColorScheme
 	@State var isPresented = false
 	let title: String
-	var backgroundColor: Color = Color(.tertiarySystemGroupedBackground)
+	var backgroundColor = Color(.tertiarySystemGroupedBackground)
 	
 	var body: some View {
 		Button {

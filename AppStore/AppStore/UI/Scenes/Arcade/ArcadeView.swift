@@ -27,7 +27,7 @@ struct ArcadeView: View {
 				}
 			}
 			.edgesIgnoringSafeArea(.top)
-			.background(Color(.systemGroupedBackground))
+			.background(Color(.systemGray6))
 		}
 	}
 }

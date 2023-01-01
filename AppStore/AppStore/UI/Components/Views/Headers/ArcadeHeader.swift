@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ArcadeHeader: View {
+	@Environment (\.colorScheme) var colorScheme: ColorScheme
 	@State var isAccountViewPresented = false
 
 	var body: some View {
@@ -19,8 +20,8 @@ struct ArcadeHeader: View {
 			Spacer()
 
 			Group {
-				Text(" Arcade")
-					.foregroundColor(Color(.lightGray))
+				Text("Arcade")
+					.foregroundColor(colorScheme == .light ? Color(.systemGray5) : .secondary)
 					.font(.title2.weight(.medium))
 				Text(
 				"""
@@ -37,7 +38,7 @@ struct ArcadeHeader: View {
 
 				Text("1 month free, then $6.66/month.")
 					.font(.footnote)
-					.foregroundColor(Color(.lightGray))
+					.foregroundColor(colorScheme == .light ? Color(.systemGray5) : .secondary)
 					.padding(.bottom, 32)
 			}
 			.padding(.horizontal, 24)
