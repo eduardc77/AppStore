@@ -15,20 +15,18 @@ struct RecentlyUpdatedAppsList: View {
 	
 	
 	var body: some View {
-		ForEach(range, id: \.self) {_ in
+		ForEach(range, id: \.self) { _ in
 			VStack {
 				AppSmallCard1()
 				Spacer()
+
 				HStack {
 					Text(description)
-						.font(.subheadline)
-					
 					Spacer()
-					
-					Button("more"){}
-						.accentColor(.blue)
-						.font(.subheadline)
+					Button("more") {}
+
 				}
+				.font(.subheadline)
 			}
 			.padding(.vertical, 10)
 		}

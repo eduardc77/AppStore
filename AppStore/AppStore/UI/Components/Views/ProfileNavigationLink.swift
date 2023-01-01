@@ -20,7 +20,7 @@ struct ProfileNavigationLink: View {
 			label: {
 				HStack {
 					image
-						.font(.system(size: 50))
+						.font(.system(size: 48))
 						.foregroundColor(.secondary)
 					
 					VStack (alignment: .leading, spacing: 4) {

@@ -15,9 +15,7 @@ struct SingleLineNavigationLink: View {
 			destination: Text(text)
 				.navigationTitle(text),
 			label: {
-				HStack {
-					Text(text)
-				}
+				Text(text)
 			}
 		)
 	}

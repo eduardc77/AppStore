@@ -37,11 +37,15 @@ struct AccountView: View {
 					RecentlyUpdatedAppsList(title: "App title", date: "Today", range: 0..<6)
 				}
 
+				Section {
+					SingleLineButton(title: "Sign Out")
+				}
 			}
 			.listStyle(.insetGrouped)
 			.navigationBarTitle("Account", displayMode: .inline)
-			.refreshable {}
 			.navigationBarItems(trailing: DismissButton(title: "Done", presentationMode: _presentationMode))
+			.refreshable {}
+
 		}
 	}
 }
