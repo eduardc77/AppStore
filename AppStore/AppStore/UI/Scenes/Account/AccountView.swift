@@ -20,6 +20,7 @@ struct AccountView: View {
 				Section {
 					SingleLineNavigationLink(text: "Purchased")
 					SingleLineNavigationLink(text: "Subscriptions")
+					SingleLineNavigationLink(text: "Notifications")
 				}
 
 				Section {
@@ -33,12 +34,13 @@ struct AccountView: View {
 				}
 
 				Section(header: Text("UPDATED RECENTLY")) {
-					RecentlyUpdatedAppsList(title: "App title", date: "Today", range: Range(0...5))
+					RecentlyUpdatedAppsList(title: "App title", date: "Today", range: 0..<6)
 				}
 
 			}
-			.listStyle(GroupedListStyle())
+			.listStyle(.insetGrouped)
 			.navigationBarTitle("Account", displayMode: .inline)
+			.refreshable {}
 			.navigationBarItems(trailing: DismissButton(title: "Done", presentationMode: _presentationMode))
 		}
 	}

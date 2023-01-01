@@ -12,7 +12,8 @@ struct SingleLineNavigationLink: View {
 	
 	var body: some View {
 		NavigationLink(
-			destination: EmptyView(),
+			destination: Text(text)
+				.navigationTitle(text),
 			label: {
 				HStack {
 					Text(text)

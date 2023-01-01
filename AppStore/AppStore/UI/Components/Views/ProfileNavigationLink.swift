@@ -14,18 +14,20 @@ struct ProfileNavigationLink: View {
 	
 	var body: some View {
 		NavigationLink(
-			destination: EmptyView(),
+			destination:
+				Text("Account")
+				.navigationTitle("Account"),
 			label: {
 				HStack {
 					image
 						.font(.system(size: 50))
-						.padding(.horizontal, 5)
 						.foregroundColor(.secondary)
 					
-					VStack (alignment: .leading, spacing: 5) {
+					VStack (alignment: .leading, spacing: 4) {
 						Text(username)
 						Text(email)
-							.font(.caption)
+							.foregroundColor(.secondary)
+							.font(.footnote)
 					}
 				}
 			}
