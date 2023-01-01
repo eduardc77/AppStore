@@ -14,15 +14,15 @@ struct SearchView: View {
 	var body: some View {
 		NavigationView {
 			ScrollView {
-				DiscoverBlock()
-				Spacer()
+				DiscoverBlock(text: $text)
 				SuggestedAppsBlock()
 			}
 			.navigationBarTitle("Search")
-			.searchable(text: $text)
 			.navigationBarItems(trailing: AccountButton(isAccountViewPresented: $isAccountViewPresented))
+			.searchable(text: $text,
+							placement:.navigationBarDrawer(displayMode:.always),
+							prompt: "Games, Apps, Stories and More")
 		}
-		.navigationViewStyle(StackNavigationViewStyle())
 	}
 }
 

@@ -11,8 +11,7 @@ struct SuggestedAppsBlock: View {
 	var body: some View {
 		VStack(alignment: .leading) {
 			Text("Suggested")
-				.font(.title3)
-				.bold()
+				.font(.title2.weight(.bold))
 			
 			ForEach(Range(0...5), id: \.self) {_ in
 				Divider()

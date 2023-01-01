@@ -7,34 +7,51 @@
 
 import SwiftUI
 
-struct DiscoverBlock: View { 
+struct DiscoverBlock: View {
+	@Binding var text: String
+	var discoverSearches = DiscoverSearch.allCases
+
 	var body: some View {
 		VStack(alignment: .leading) {
 			Text("Discover")
-				.font(.title3)
-				.bold()
-			
-			Divider()
-			
-			Group {
-				SingleLineButton(title: "alarm clock")
+				.font(.title2.weight(.bold))
+
+			ForEach(discoverSearches, id: \.self) { search in
 				Divider()
-				SingleLineButton(title: "reverse video")
-				Divider()
-				SingleLineButton(title: "video editor")
-				Divider()
-				SingleLineButton(title: "car games")
+
+				Button {
+					text = search.title
+				} label: {
+					Text(search.title)
+						.font(.title3)
+						.frame(maxWidth: .infinity, alignment: .leading)
+				}
 			}
 		}
-		.frame(maxWidth: .infinity, alignment: .leading)
 		.padding()
+	}
+}
+
+enum DiscoverSearch: String, CaseIterable {
+	case tetris
+	case youtube
+	case metamask
+	case videoEditor
+
+	var title: String {
+		switch self {
+		case .videoEditor:
+			return " video editor"
+		default:
+			return self.rawValue
+		}
 	}
 }
 
 
 struct DiscoverBlock_Previews: PreviewProvider {
 	static var previews: some View {
-		DiscoverBlock()
+		DiscoverBlock(text: .constant("text"))
 	}
 }
 

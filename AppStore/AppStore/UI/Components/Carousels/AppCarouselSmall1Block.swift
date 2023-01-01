@@ -14,7 +14,7 @@ struct AppCarouselSmall1Block: View {
 	var body: some View {
 		VStack {
 			SectionHeaderExtendedBlock(title: title)
-				.padding()
+				.padding([.top, .horizontal])
 
 			TabView {
 				ForEach(0 ..< 5, id: \.self) { item in
@@ -27,9 +27,8 @@ struct AppCarouselSmall1Block: View {
 				.padding(.horizontal)
 			}
 			.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-			.tabViewStyle(PageTabViewStyle())
 		}
-		.frame(width: UIScreen.main.bounds.width, height: 250)
+		.frame(width: UIScreen.main.bounds.width, height: 260)
 		.padding(.bottom)
 		.background(Color(.systemBackground))
 	}

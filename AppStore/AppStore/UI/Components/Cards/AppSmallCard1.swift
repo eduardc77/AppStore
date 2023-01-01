@@ -18,7 +18,7 @@ struct AppSmallCard1: View {
 		HStack {
 			RoundedRectangle(cornerRadius: 12, style: .continuous)
 				.foregroundColor(Color.gray)
-				.frame(width: 50, height: 50)
+				.frame(width: 60, height: 60)
 			
 			VStack(alignment: .leading) {
 				Text(title)
