@@ -13,10 +13,11 @@ struct QuickLinksBlock: View {
 	var body: some View {
 		VStack(alignment: .leading) {
 			SectionHeaderBlock(title: "Quick Links")
-				.padding(.bottom, 24)
+				.padding(.bottom, 2)
 			
 			ForEach(quickLinks, id: \.self) { linkRow in
 				SingleLineButton(title: linkRow.title)
+					.font(.title3)
 				Divider()
 			}
 			
@@ -25,7 +26,7 @@ struct QuickLinksBlock: View {
 				SecondaryButton(title: "Send Gift")
 				SecondaryButton(title: "Add Funds to Apple ID")
 			}
-			.padding(.top, 64)
+			.padding(.top)
 		}
 		.frame(maxWidth: .infinity, alignment: .leading)
 		.padding()

@@ -11,7 +11,7 @@ struct TopAppsCategoriesBlock: View {
 	var body: some View {
 		VStack {
 			SectionHeaderExtendedBlock(title: "Top Categories")
-				.padding(.bottom, 24)
+				.padding(.bottom, 2)
 			
 			VStack {
 				SingleLineIconAndButtonView(emojiImage: "⌚️", buttonTitle: "Apple Watch Apps")
@@ -41,6 +41,8 @@ struct TopAppsCategoriesBlock: View {
 					SingleLineIconAndButtonView(emojiImage: "📡", buttonTitle: "News")
 				}
 			}
+			.font(.title3)
+			.padding(.leading, 4)
 		}
 		.frame(maxWidth: .infinity, alignment: .leading)
 		.padding(.horizontal)

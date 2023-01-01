@@ -32,7 +32,7 @@ struct AppCarouselLargeBlock: View {
 			}
 			.padding(.horizontal)
 		}
-		.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.373)
+		.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.35)
 		.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
 		.padding(.bottom, 24)
 	}

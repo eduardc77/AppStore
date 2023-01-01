@@ -16,13 +16,11 @@ struct SectionHeaderExtendedBlock: View {
 			
 			HStack {
 				Text(title)
-					.font(.title3)
-					.bold()
+					.font(.title3.weight(.bold))
 				
 				Spacer()
 				
 				Button("See All") {}
-					.font(.subheadline)
 			}
 		}
 	}

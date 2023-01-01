@@ -14,8 +14,13 @@ struct ArcadeView: View {
 		GeometryReader { geoReader in
 			ScrollView {
 				VStack(spacing: 0) {
-					ArcadeHeader()
-					AppCarouselSmall1Block(title: "Popular Arcade Games")
+					Group {
+						ArcadeHeader()
+							.padding(.bottom, 16)
+						AppCarouselSmall1Block(title: "Popular Arcade Games")
+					}
+					.background(Color(.systemBackground))
+					
 					AppCarouselMedium1Block(title: "Arcade Games With Gorgeous Graphics", cellsNumber: 5)
 					AppCarouselSmall2Block(size: geoReader.size)
 					TermsAndConditionsBlock()

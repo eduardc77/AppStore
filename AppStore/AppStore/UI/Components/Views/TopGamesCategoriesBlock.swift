@@ -11,7 +11,7 @@ struct TopGamesCategoriesBlock: View {
 	var body: some View {
 		VStack(alignment: .leading) {
 			SectionHeaderExtendedBlock(title: "Top Categories")
-				.padding(.bottom, 24)
+				.padding(.bottom, 2)
 			
 			VStack {
 				SingleLineIconAndButtonView(emojiImage: "👾", buttonTitle: "Casual")
@@ -41,8 +41,9 @@ struct TopGamesCategoriesBlock: View {
 					SingleLineIconAndButtonView(emojiImage: "🥽", buttonTitle: "Simulation")
 				}
 			}
+			.font(.title3)
+			.padding(.leading, 4)
 		}
-		
 		.padding(.horizontal)
 	}
 	

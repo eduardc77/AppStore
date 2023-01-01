@@ -13,11 +13,9 @@ struct SectionHeaderBlock: View {
 	var body: some View {
 		VStack(alignment: .leading) {
 			Divider()
-			HStack {
-				Text(title)
-					.font(.title3)
-					.bold()
-			}
+
+			Text(title)
+				.font(.title3.weight(.bold))
 		}
 	}
 }

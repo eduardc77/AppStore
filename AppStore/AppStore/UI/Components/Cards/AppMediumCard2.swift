@@ -52,6 +52,7 @@ struct AppMediumCard2: View {
 
 			.frame(width: 200, height: 150, alignment: .leading)
 		}
+		.padding(.bottom, 16)
 	}
 }
 
