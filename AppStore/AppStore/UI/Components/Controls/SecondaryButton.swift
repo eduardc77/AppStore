@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SecondaryButton: View {
-	@Environment (\.colorScheme) var colorScheme:ColorScheme
+	@Environment (\.colorScheme) var colorScheme: ColorScheme
 	@State var isPresented = false
 	let title: String
+	var backgroundColor: Color = Color(.tertiarySystemGroupedBackground)
 	
 	var body: some View {
 		Button {
@@ -21,7 +22,7 @@ struct SecondaryButton: View {
 				.frame(maxWidth: .infinity)
 				.frame(height: 36)
 				.foregroundColor(colorScheme == .light ? .blue : .white)
-				.background(Color(.secondarySystemGroupedBackground))
+				.background(backgroundColor)
 				.cornerRadius(12)
 
 		}

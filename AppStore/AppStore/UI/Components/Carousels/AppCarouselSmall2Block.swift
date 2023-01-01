@@ -21,7 +21,7 @@ struct AppCarouselSmall2Block: View {
 				Text("Arcade")
 					.font(.footnote.weight(.medium))
 
-				SecondaryButton(title: "See all games")
+				SecondaryButton(title: "See all games", backgroundColor: Color(.secondarySystemGroupedBackground))
 			}
 			.padding(.horizontal, 80)
 		}
