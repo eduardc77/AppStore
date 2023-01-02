@@ -10,7 +10,7 @@ import SwiftUI
 struct TodayView: View {
 	// MARK: - Private Properties
 
-	@State private var showDetailPage = false
+	@State private var showDetail = false
 	@State private var currentItem: LargeCardModel?
 	@State private var scale: CGFloat = 1
 	@State private var animateView = false
@@ -32,11 +32,12 @@ struct TodayView: View {
 			TermsAndConditionsBlock()
 		}
 		.overlay {
-			if let currentItem = currentItem, showDetailPage {
+			if let currentItem = currentItem, showDetail {
 				detailView(item: currentItem)
-					.ignoresSafeArea(.all, edges: .top)
+					.ignoresSafeArea()
 			}
 		}
+		.toolbar(showDetail ? .hidden : .visible, for: .tabBar)
 	}
 }
 
@@ -48,19 +49,19 @@ private extension TodayView {
 		Group {
 			if isFirstSection {
 				VStack(alignment: .leading) {
-					Text(Date().toFullDateFormat())
-						.font(.subheadline)
+					Text(Date().toFullDateFormat().uppercased())
+						.font(.footnote.weight(.semibold))
 						.foregroundColor(.secondary)
 
 					HStack(spacing: 0) {
 						Text(Date().toWeekDayFormat())
-							.font(.title.weight(.bold))
+							.font(.largeTitle.weight(.bold))
 
 						Spacer()
 
 						AccountButton(isAccountViewPresented: $isAccountViewPresented)
 					}
-					.opacity(showDetailPage ? 0 : 1)
+					.opacity(showDetail ? 0 : 1)
 				}
 			} else {
 				VStack(alignment: .leading) {
@@ -80,13 +81,13 @@ private extension TodayView {
 			Button {
 				withAnimation(.largeCardDetail) {
 					currentItem = item
-					showDetailPage = true
+					showDetail = true
 				}
 			} label: {
 				cardView(item: item)
 			}
 			.buttonStyle(.scaleButtonStyle)
-			.padding(.top)
+			.padding(.bottom)
 			.padding(.horizontal, 20)
 		}
 	}
@@ -120,8 +121,8 @@ private extension TodayView {
 				.background(.secondary)
 		}
 		.background(.gray)
-		.clipShape(RoundedRectangle(cornerRadius: showDetailPage ? 0 : 16, style: .continuous))
-		.shadow(radius: showDetailPage ? 0 : 16)
+		.clipShape(RoundedRectangle(cornerRadius: showDetail ? 0 : 16, style: .continuous))
+		.shadow(radius: showDetail ? 0 : 16)
 		.matchedGeometryEffect(id: item.id, in: animation)
 	}
 
@@ -142,7 +143,7 @@ private extension TodayView {
 					Divider()
 
 					SecondaryButton(title: "Share Story", systemImageName: "square.and.arrow.up")
-						.padding(.horizontal, 72)
+						.padding(72)
 				}
 				.padding()
 				.offset(y: scrollOffset > 0 ? scrollOffset : 0)
@@ -197,7 +198,7 @@ private extension TodayView {
 	}
 
 	func onChanged(value: DragGesture.Value) {
-		guard 1 - scale <= 1, showDetailPage else { return }
+		guard 1 - scale <= 1, showDetail else { return }
 		beginDragToCloseGesture = true
 		let scale = value.translation.height / UIScreen.main.bounds.height
 		cornerRadius = value.translation.height - value.translation.height / 1.2
@@ -221,7 +222,7 @@ private extension TodayView {
 
 	func resetAnimations() {
 		currentItem = nil
-		showDetailPage = false
+		showDetail = false
 		animateView = false
 		animateContent = false
 		self.scale = 1
