@@ -19,9 +19,9 @@ struct AppCarouselSmall2Block: View {
 
 			VStack(spacing: 10) {
 				Text("Arcade")
-					.font(.footnote.weight(.medium))
+					.font(.body.weight(.semibold))
 
-				SecondaryButton(title: "See all games")
+				SecondaryButton(title: "See all games", backgroundColor: Color(.secondarySystemGroupedBackground))
 			}
 			.padding(.horizontal, 80)
 		}
