@@ -32,3 +32,4 @@ struct AppsView_Previews: PreviewProvider {
 		AppsView()
 	}
 }
+

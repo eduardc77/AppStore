@@ -23,7 +23,6 @@
 		EA2E0264295CB7C300E67C8F /* AppCarouselSmall1Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E025E295CB7C300E67C8F /* AppCarouselSmall1Block.swift */; };
 		EA2E0265295CB7C300E67C8F /* AppCarouselMedium1Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E025F295CB7C300E67C8F /* AppCarouselMedium1Block.swift */; };
 		EA2E0266295CB7C300E67C8F /* AppCarouselMedium2Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0260295CB7C300E67C8F /* AppCarouselMedium2Block.swift */; };
-		EA2E0267295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0261295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift */; };
 		EA2E0268295CB7C300E67C8F /* AppCarouselLargeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0262295CB7C300E67C8F /* AppCarouselLargeBlock.swift */; };
 		EA2E0271295CB97000E67C8F /* AppLargeCard3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026A295CB97000E67C8F /* AppLargeCard3.swift */; };
 		EA2E0272295CB97000E67C8F /* AppSmallCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E026B295CB97000E67C8F /* AppSmallCard2.swift */; };
@@ -58,6 +57,10 @@
 		EA2E02AE295CC32400E67C8F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E02AD295CC32400E67C8F /* Date+Extension.swift */; };
 		EA5DA82B295F7F3100C2060C /* InfiniteCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA82A295F7F3100C2060C /* InfiniteCarousel.swift */; };
 		EA5DA82D295FB18900C2060C /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA82C295FB18900C2060C /* ParallaxHeaderView.swift */; };
+		EA827CBB2962496F00646256 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA827CBA2962496F00646256 /* ScaleButtonStyle.swift */; };
+		EA827CC0296291C000646256 /* ScrollOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA827CBF296291C000646256 /* ScrollOffsetModifier.swift */; };
+		EABAA4D829635B140082D179 /* FooterButtonsBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA4D729635B140082D179 /* FooterButtonsBlock.swift */; };
+		EABAA4DA296379D20082D179 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA4D9296379D20082D179 /* Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +81,6 @@
 		EA2E025E295CB7C300E67C8F /* AppCarouselSmall1Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselSmall1Block.swift; sourceTree = "<group>"; };
 		EA2E025F295CB7C300E67C8F /* AppCarouselMedium1Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselMedium1Block.swift; sourceTree = "<group>"; };
 		EA2E0260295CB7C300E67C8F /* AppCarouselMedium2Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselMedium2Block.swift; sourceTree = "<group>"; };
-		EA2E0261295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselExtraLargeBlock.swift; sourceTree = "<group>"; };
 		EA2E0262295CB7C300E67C8F /* AppCarouselLargeBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCarouselLargeBlock.swift; sourceTree = "<group>"; };
 		EA2E026A295CB97000E67C8F /* AppLargeCard3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLargeCard3.swift; sourceTree = "<group>"; };
 		EA2E026B295CB97000E67C8F /* AppSmallCard2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSmallCard2.swift; sourceTree = "<group>"; };
@@ -113,6 +115,10 @@
 		EA2E02AD295CC32400E67C8F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		EA5DA82A295F7F3100C2060C /* InfiniteCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarousel.swift; sourceTree = "<group>"; };
 		EA5DA82C295FB18900C2060C /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		EA827CBA2962496F00646256 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
+		EA827CBF296291C000646256 /* ScrollOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetModifier.swift; sourceTree = "<group>"; };
+		EABAA4D729635B140082D179 /* FooterButtonsBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButtonsBlock.swift; sourceTree = "<group>"; };
+		EABAA4D9296379D20082D179 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,8 @@
 		EA2E0244295CB27A00E67C8F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EA827CBC2962791700646256 /* Modifiers */,
+				EA827CB92962495500646256 /* Styles */,
 				EA2E0279295CBB7700E67C8F /* Views */,
 				EA2E0278295CBB7100E67C8F /* Controls */,
 				EA2E0269295CB95E00E67C8F /* Cards */,
@@ -264,7 +272,6 @@
 		EA2E025C295CB7B700E67C8F /* Carousels */ = {
 			isa = PBXGroup;
 			children = (
-				EA2E0261295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift */,
 				EA2E0262295CB7C300E67C8F /* AppCarouselLargeBlock.swift */,
 				EA2E025F295CB7C300E67C8F /* AppCarouselMedium1Block.swift */,
 				EA2E0260295CB7C300E67C8F /* AppCarouselMedium2Block.swift */,
@@ -314,6 +321,7 @@
 				EA2E027A295CBBB300E67C8F /* QuickLinksBlock.swift */,
 				EA2E027F295CBBB300E67C8F /* SuggestedAppsBlock.swift */,
 				EA2E027D295CBBB300E67C8F /* TermsAndConditionsBlock.swift */,
+				EABAA4D729635B140082D179 /* FooterButtonsBlock.swift */,
 				EA2E027C295CBBB300E67C8F /* TopAppsCategoriesBlock.swift */,
 				EA2E027E295CBBB300E67C8F /* TopGamesCategoriesBlock.swift */,
 				EA2E0286295CBBB700E67C8F /* RecentlyUpdatedAppsList.swift */,
@@ -350,6 +358,23 @@
 				EA2E02AD295CC32400E67C8F /* Date+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA827CB92962495500646256 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				EA827CBA2962496F00646256 /* ScaleButtonStyle.swift */,
+				EABAA4D9296379D20082D179 /* Animations.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		EA827CBC2962791700646256 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				EA827CBF296291C000646256 /* ScrollOffsetModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,8 +453,8 @@
 				EA2E0280295CBBB300E67C8F /* QuickLinksBlock.swift in Sources */,
 				EA2E0266295CB7C300E67C8F /* AppCarouselMedium2Block.swift in Sources */,
 				EA2E0255295CB33500E67C8F /* DetailView.swift in Sources */,
+				EA827CC0296291C000646256 /* ScrollOffsetModifier.swift in Sources */,
 				EA2E0272295CB97000E67C8F /* AppSmallCard2.swift in Sources */,
-				EA2E0267295CB7C300E67C8F /* AppCarouselExtraLargeBlock.swift in Sources */,
 				EA2E02AB295CC15E00E67C8F /* SingleLineNavigationLink.swift in Sources */,
 				EA2E0281295CBBB300E67C8F /* DiscoverBlock.swift in Sources */,
 				EA5DA82B295F7F3100C2060C /* InfiniteCarousel.swift in Sources */,
@@ -438,6 +463,7 @@
 				EA2E0283295CBBB300E67C8F /* TermsAndConditionsBlock.swift in Sources */,
 				EA2E0249295CB2F500E67C8F /* TodayView.swift in Sources */,
 				EA2E02AA295CC15E00E67C8F /* ProfileNavigationLink.swift in Sources */,
+				EABAA4D829635B140082D179 /* FooterButtonsBlock.swift in Sources */,
 				EA2E0297295CBDA900E67C8F /* SecondaryButton.swift in Sources */,
 				EA2E0293295CBDA900E67C8F /* DismissButton.swift in Sources */,
 				EA2E0296295CBDA900E67C8F /* TryButton.swift in Sources */,
@@ -461,11 +487,13 @@
 				EA2E0263295CB7C300E67C8F /* AppCarouselSmall2Block.swift in Sources */,
 				EA2E02A0295CBE4800E67C8F /* ItemDetailsLabel.swift in Sources */,
 				EA2E0276295CB97000E67C8F /* AppMediumCard2.swift in Sources */,
+				EA827CBB2962496F00646256 /* ScaleButtonStyle.swift in Sources */,
 				EA204D972960E50D00687003 /* PrimaryButton.swift in Sources */,
 				EA2E0294295CBDA900E67C8F /* SingleLineButton.swift in Sources */,
 				EA2E0284295CBBB300E67C8F /* TopGamesCategoriesBlock.swift in Sources */,
 				EA2E029F295CBE4800E67C8F /* InAppPurchasesLabel.swift in Sources */,
 				EA2E024B295CB30200E67C8F /* GamesView.swift in Sources */,
+				EABAA4DA296379D20082D179 /* Animations.swift in Sources */,
 				EA2E0273295CB97000E67C8F /* AppSmallCard1.swift in Sources */,
 				EA5DA82D295FB18900C2060C /* ParallaxHeaderView.swift in Sources */,
 				EA2E024D295CB30D00E67C8F /* AppsView.swift in Sources */,

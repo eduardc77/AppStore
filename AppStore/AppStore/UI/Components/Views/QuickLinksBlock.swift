@@ -21,12 +21,8 @@ struct QuickLinksBlock: View {
 				Divider()
 			}
 			
-			VStack(spacing: 10) {
-				SecondaryButton(title: "Redeem")
-				SecondaryButton(title: "Send Gift")
-				SecondaryButton(title: "Add Funds to Apple ID")
-			}
-			.padding(.top)
+			FooterButtonsBlock()
+				.padding(.top)
 		}
 		.frame(maxWidth: .infinity, alignment: .leading)
 		.padding()

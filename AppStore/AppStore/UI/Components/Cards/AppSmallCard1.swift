@@ -10,16 +10,27 @@ import SwiftUI
 struct AppSmallCard1: View {
 	var title: String = "App Title"
 	var subtitle: String = "App Description"
+	var imageName: String?
 	var titleColor: Color = .primary
 	var subtitleColor: Color = .secondary
 	var buttonDescriptionColor: Color = .primary
+	var imageSize: CGFloat = 60
 
 	var body: some View {
 		HStack {
-			RoundedRectangle(cornerRadius: 12, style: .continuous)
-				.foregroundColor(Color.gray)
-				.frame(width: 60, height: 60)
-			
+			Group {
+				if let imageName = imageName {
+					Image(imageName)
+						.resizable()
+						.scaledToFit()
+				} else {
+					Rectangle()
+						.foregroundColor(Color(.gray))
+				}
+			}
+			.frame(width: imageSize, height: imageSize)
+			.clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+
 			VStack(alignment: .leading) {
 				Text(title)
 					.bold()

@@ -16,7 +16,6 @@ struct ArcadeView: View {
 				VStack(spacing: 0) {
 					Group {
 						ArcadeHeader()
-							.padding(.bottom, 16)
 						AppCarouselSmall1Block(title: "Popular Arcade Games")
 					}
 					.background(Color(.systemBackground))

@@ -49,6 +49,7 @@ struct ArcadeHeader: View {
 		.background {
 			ParallaxHeaderView()
 		}
+		.padding(.bottom, 16)
 	}
 }
 

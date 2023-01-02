@@ -12,18 +12,21 @@ struct SecondaryButton: View {
 	@State var isPresented = false
 	let title: String
 	var backgroundColor = Color(.tertiarySystemGroupedBackground)
+	var systemImageName: String? = nil
 	
 	var body: some View {
 		Button {
 			isPresented = true
 		} label: {
-			Text(title)
-				.fontWeight(.semibold)
-				.frame(maxWidth: .infinity)
-				.frame(height: 36)
-				.foregroundColor(colorScheme == .light ? .blue : .white)
-				.background(backgroundColor)
-				.cornerRadius(12)
+			HStack {
+				Label(title, systemImage: systemImageName ?? "")
+					.font(.headline)
+					.frame(maxWidth: .infinity)
+					.frame(height: 36)
+					.foregroundColor(colorScheme == .light ? .blue : .white)
+					.background(backgroundColor)
+					.cornerRadius(12)
+			}
 
 		}
 		.sheet(isPresented: $isPresented) {
