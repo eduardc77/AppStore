@@ -76,13 +76,13 @@ var todayItems: [LargeCardModel] = [
 
 	LargeCardModel(appName: "Jetpack Joyride 2", appDescription: "Adventure Awaits.", appLogo: "jetpack-joyride-app-logo", bannerTitle: "Game of the day", platformTitle: "Apple Arcade", artwork: "banner-jetpack-joyride-2"),
 
-	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "AppIcon", bannerTitle: "App Of The Day", platformTitle: "Apple Arcade", artwork: ""),
+	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "", bannerTitle: "App Of The Day", platformTitle: "Apple Arcade", artwork: ""),
 
-	LargeCardModel(appName: "App Name", appDescription: "Practice critical thinking and problem solving with these apps.", appLogo: "AppIcon", bannerTitle: "Train your brain and have fun", platformTitle: "Get Started", artwork: ""),
+	LargeCardModel(appName: "App Name", appDescription: "Practice critical thinking and problem solving with these apps.", appLogo: "", bannerTitle: "Train your brain and have fun", platformTitle: "Get Started", artwork: ""),
 
-	LargeCardModel(appName: "MARVEL Strike Force", appDescription: "MARVEL Heroes & Villains Await", appLogo: "AppIcon", bannerTitle: "Game Of The Day", platformTitle: "", artwork: ""),
+	LargeCardModel(appName: "MARVEL Strike Force", appDescription: "MARVEL Heroes & Villains Await", appLogo: "", bannerTitle: "Game Of The Day", platformTitle: "", artwork: ""),
 
-	LargeCardModel(appName: "App Name", appDescription: "Track & share with friends", appLogo: "AppIcon", bannerTitle: "5 tips for Strava", platformTitle: "Get Started", artwork: ""),
+	LargeCardModel(appName: "App Name", appDescription: "Track & share with friends", appLogo: "", bannerTitle: "5 tips for Strava", platformTitle: "Get Started", artwork: ""),
 
 	LargeCardModel(appName: "", appDescription: "", appLogo: "", bannerTitle: "Try these apps for kids", platformTitle: "Featured", artwork: ""),
 
@@ -90,7 +90,7 @@ var todayItems: [LargeCardModel] = [
 ]
 
 var moreStories: [LargeCardModel] = [
-	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "AppIcon", bannerTitle: "Your guide to staying in", platformTitle: "Now Trending", artwork: "post1"),
+	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "", bannerTitle: "Your guide to staying in", platformTitle: "Now Trending", artwork: "post1"),
 
 	LargeCardModel(appName: "", appDescription: "", appLogo: "", bannerTitle: "Our top 10 workout apps", platformTitle: "Essentials", artwork: "post2"),
 
@@ -100,9 +100,9 @@ var moreStories: [LargeCardModel] = [
 
 	LargeCardModel(appName: "", appDescription: "", appLogo: "", bannerTitle: "Learn to code with these apps", platformTitle: "Everyone Can Code", artwork: "post1"),
 
-	LargeCardModel(appName: "App Name", appDescription: "Make money from your passion", appLogo: "logo2", bannerTitle: "Make your photos popular", platformTitle: "How To", artwork: "post2"),
+	LargeCardModel(appName: "App Name", appDescription: "Make money from your passion", appLogo: "", bannerTitle: "Make your photos popular", platformTitle: "How To", artwork: "post2"),
 
-	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "AppIcon", bannerTitle: "App Of The Day", platformTitle: "Apple Arcade", artwork: ""),
+	LargeCardModel(appName: "App Name", appDescription: "App Description", appLogo: "", bannerTitle: "App Of The Day", platformTitle: "Apple Arcade", artwork: ""),
 
-	LargeCardModel(appName: "App Name", appDescription: "Practice critical thinking and problem solving with these apps.", appLogo: "AppIcon", bannerTitle: "Train your brain and have fun", platformTitle: "Get Started", artwork: ""),
+	LargeCardModel(appName: "App Name", appDescription: "Practice critical thinking and problem solving with these apps.", appLogo: "", bannerTitle: "Train your brain and have fun", platformTitle: "Get Started", artwork: ""),
 ]

@@ -15,22 +15,16 @@ struct AppSmallCard1: View {
 	var subtitleColor: Color = .secondary
 	var buttonDescriptionColor: Color = .primary
 	var imageSize: CGFloat = 60
-
+	
 	var body: some View {
 		HStack {
-			Group {
-				if let imageName = imageName {
-					Image(imageName)
-						.resizable()
-						.scaledToFit()
-				} else {
-					Rectangle()
-						.foregroundColor(Color(.gray))
-				}
-			}
-			.frame(width: imageSize, height: imageSize)
-			.clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-
+			Image(imageName ?? "")
+				.resizable()
+				.scaledToFit()
+				.background(Color(.lightGray))
+				.frame(width: imageSize, height: imageSize)
+				.clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+			
 			VStack(alignment: .leading) {
 				Text(title)
 					.bold()

@@ -121,11 +121,11 @@ private extension TodayView {
 			AppSmallCard1(title: item.appName, subtitle: item.appDescription, imageName: item.appLogo, titleColor: .white, subtitleColor: .white, buttonDescriptionColor: .white, imageSize: 48)
 				.padding(.horizontal, 20)
 				.padding(.vertical)
-				.background(.secondary)
+				.background(Color(.darkGray))
 		}
 		.background(.gray)
 		.clipShape(RoundedRectangle(cornerRadius: showDetail ? 0 : 16, style: .continuous))
-		.shadow(radius: showDetail ? 0 : 16)
+		.shadow(radius: showDetail ? 0 : 12, x: showDetail ? 0 : 8, y: showDetail ? 0 : 8)
 		.matchedGeometryEffect(id: item.id, in: animation)
 	}
 
@@ -149,6 +149,7 @@ private extension TodayView {
 					SecondaryButton(title: "Share Story", systemImageName: "square.and.arrow.up")
 						.padding(72)
 				}
+				.padding(.top)
 				.padding(.horizontal, 20)
 				.offset(y: scrollOffset > 0 ? scrollOffset : 0)
 				.opacity(animateContent ? 1 : 0)
