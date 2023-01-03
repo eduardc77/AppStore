@@ -38,6 +38,7 @@ struct TodayView: View {
 			}
 		}
 		.toolbar(showDetail ? .hidden : .visible, for: .tabBar)
+		.statusBarHidden(showDetail ? true : false)
 	}
 }
 
@@ -92,7 +93,8 @@ private extension TodayView {
 		}
 	}
 
-	// MARK: - CardView
+	// MARK: - Card View
+
 	@ViewBuilder
 	func cardView(item: LargeCardModel) -> some View {
 		VStack(alignment: .leading, spacing: 0) {
@@ -112,11 +114,12 @@ private extension TodayView {
 						.foregroundColor(.white)
 				}
 				.offset(y: currentItem?.id == item.id && animateView ? safeArea().top : 0)
-				.padding(24)
+				.padding(.horizontal, 20)
+				.padding(.top, showDetail ? 0 : 16)
 			}
 
 			AppSmallCard1(title: item.appName, subtitle: item.appDescription, imageName: item.appLogo, titleColor: .white, subtitleColor: .white, buttonDescriptionColor: .white, imageSize: 48)
-				.padding(.horizontal, 24)
+				.padding(.horizontal, 20)
 				.padding(.vertical)
 				.background(.secondary)
 		}
@@ -127,6 +130,7 @@ private extension TodayView {
 	}
 
 	// MARK: - Detail View
+
 	@ViewBuilder
 	func detailView(item: LargeCardModel) -> some View {
 		ScrollView(.vertical, showsIndicators: false) {
@@ -138,14 +142,14 @@ private extension TodayView {
 						.foregroundColor(.secondary)
 						.font(.title3)
 						.lineSpacing(6)
-						.padding(.bottom, 20)
+						.padding(.bottom, 24)
 
 					Divider()
 
 					SecondaryButton(title: "Share Story", systemImageName: "square.and.arrow.up")
 						.padding(72)
 				}
-				.padding()
+				.padding(.horizontal, 20)
 				.offset(y: scrollOffset > 0 ? scrollOffset : 0)
 				.opacity(animateContent ? 1 : 0)
 				.scaleEffect(animateView ? 1 : 0, anchor: .top)
@@ -164,20 +168,19 @@ private extension TodayView {
 				}
 			} label: {
 				Image(systemName: "xmark.circle.fill")
-					.font(.title)
+					.font(.largeTitle)
+					.imageScale(.small)
 					.foregroundStyle(Color(.darkGray), Color(.systemGroupedBackground))
 					.opacity(scale - cornerRadius)
 
 			}
-			.padding(.top, safeArea().top)
+			.padding(.top)
 			.padding(.horizontal)
 		}
-
 		.onAppear {
 			withAnimation(.largeCardDetail) {
 				animateView = true
 			}
-
 			withAnimation {
 				animateContent = true
 			}
@@ -198,16 +201,16 @@ private extension TodayView {
 	}
 
 	func onChanged(value: DragGesture.Value) {
-		guard 1 - scale <= 1, showDetail else { return }
 		beginDragToCloseGesture = true
 		let scale = value.translation.height / UIScreen.main.bounds.height
+		guard 1 - scale <= 1, showDetail else { return }
 		cornerRadius = value.translation.height - value.translation.height / 1.2
 
-		if 1 - scale < 0.86 {
+		if 1 - scale < 0.85 {
 			withAnimation(.largeCardDetail) {
 				resetAnimations()
 			}
-		} else if 1 - scale > 0.86 {
+		} else if 1 - scale > 0.85 {
 			self.scale = 1 - scale
 		}
 	}
@@ -225,7 +228,7 @@ private extension TodayView {
 		showDetail = false
 		animateView = false
 		animateContent = false
-		self.scale = 1
+		scale = 1
 		beginDragToCloseGesture = false
 		cornerRadius = 0
 	}
