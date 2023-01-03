@@ -57,9 +57,7 @@ private extension TodayView {
 					HStack(spacing: 0) {
 						Text(Date().toWeekDayFormat())
 							.font(.largeTitle.weight(.bold))
-
 						Spacer()
-
 						AccountButton(isAccountViewPresented: $isAccountViewPresented)
 					}
 					.opacity(showDetail ? 0 : 1)
@@ -207,11 +205,11 @@ private extension TodayView {
 		guard 1 - scale <= 1, showDetail else { return }
 		cornerRadius = value.translation.height - value.translation.height / 1.2
 
-		if 1 - scale < 0.85 {
+		if 1 - scale < 0.84 {
 			withAnimation(.largeCardDetail) {
 				resetAnimations()
 			}
-		} else if 1 - scale > 0.85 {
+		} else if 1 - scale > 0.84 {
 			self.scale = 1 - scale
 		}
 	}
