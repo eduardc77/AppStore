@@ -10,9 +10,9 @@ import SwiftUI
 struct SearchView: View {
 	@State var isAccountViewPresented = false
 	@State var text: String = ""
-
+	
 	var body: some View {
-		NavigationView {
+		NavigationStack {
 			ScrollView {
 				DiscoverBlock(text: $text)
 				SuggestedAppsBlock()

@@ -11,7 +11,7 @@ struct AppsView: View {
 	@State var isAccountViewPresented = false
 
 	var body: some View {
-		NavigationView {
+		NavigationStack {
 			ScrollView {
 				AppCarouselLargeBlock()
 				AppCarouselSmall1Block(title: "Get Ready for Sports")
@@ -23,6 +23,7 @@ struct AppsView: View {
 			.navigationBarTitle("Apps")
 			.navigationBarItems(trailing: AccountButton(isAccountViewPresented: $isAccountViewPresented))
 		}
+		
 	}
 }
 

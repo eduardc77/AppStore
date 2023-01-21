@@ -15,7 +15,7 @@ struct AppCarouselSmall2Block: View {
 
 	var body: some View {
 		VStack(spacing: 20) {
-			infiniteCarouselSection(size: size)
+			infiniteCarouselSection
 
 			VStack(spacing: 10) {
 				Text("Arcade")
@@ -29,7 +29,7 @@ struct AppCarouselSmall2Block: View {
 		.padding(.bottom, 16)
 	}
 
-	private func infiniteCarouselSection(size: CGSize) -> some View {
+	private var infiniteCarouselSection: some View {
 		InfiniteCarousel(scrollingDirection: .left,
 							  contentSize: size) {
 			VStack {
